@@ -23,7 +23,7 @@ public class CustomerController implements Customer{
 	
 	public Status createUser(CreateCustomerRequest createcustreq) {
 		createcustreq.getMetadata().put("operationName", "createCustomer");
-		railFacadeObj.process(createcustreq);
+	//	railFacadeObj.process(createcustreq);
 		return (Status) railFacadeObj.process(createcustreq);
 	}
 

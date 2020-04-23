@@ -18,7 +18,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication(scanBasePackages = "com.railway.ticketbooking")
 // @ComponentScan(basePackages = {"org.railway.ticketbooking.Implementation"})
 // @ComponentScan(basePackages = {"org.railway.ticketbooking.Implementation"})
-@ComponentScan({"org.railway.ticketbooking.Implementation, org.railway.ticketbooking.Schemas"})
+@ComponentScan({"org.railway.ticketbooking.Implementation,org.railway.ticketbooking.Schemas,org.railway.ticketbooking.Data,org.railway.ticketbooking.DAO"})
 
 public class App 
 {

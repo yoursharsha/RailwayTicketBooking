@@ -18,7 +18,7 @@ public class CustomerTable implements Serializable {
 
 	@Id
 	@Column(name="customer_id")
-	private String customerId;
+	private BigInteger customerId;
 
 	@Column(name="cust_login_id")
 	private String custLoginId;
@@ -41,11 +41,11 @@ public class CustomerTable implements Serializable {
 	public CustomerTable() {
 	}
 
-	public String getCustomerId() {
+	public BigInteger getCustomerId() {
 		return this.customerId;
 	}
 
-	public void setCustomerId(String customerId) {
+	public void setCustomerId(BigInteger customerId) {
 		this.customerId = customerId;
 	}
 

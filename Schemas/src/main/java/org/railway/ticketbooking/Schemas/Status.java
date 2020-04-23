@@ -1,5 +1,8 @@
 package org.railway.ticketbooking.Schemas;
 
+import org.springframework.stereotype.Component;
+
+
 public class Status extends APIResponse {
 
 	private String statusMessage;
