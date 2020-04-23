@@ -16,8 +16,7 @@ import org.springframework.stereotype.Component;
 //TODO: Exception Handling
 @Component
 public class RailwayFacade {
-	@Autowired
-	private APIResponse apiresponse;
+
 	@Autowired
 	private CustomerDAO customerDAO;
 	public APIResponse process (APIRequest apireq) {
@@ -28,7 +27,7 @@ public class RailwayFacade {
 			for (CustomerTable t : customers) {
 				System.out.println(t);
 				}
-			apiresponse = new Status(200,"Success","User Created Successfully");
+			APIResponse apiresponse = new Status(200,"Success","User Created Successfully");
 			return apiresponse;
 		}
 		
